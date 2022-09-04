@@ -1,0 +1,570 @@
+version: "3.8"
+
+networks:
+  ctf-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "172.25.1.0/24"
+          gateway: 172.25.1.1
+
+services:
+  also-unknown-as-01:
+    container_name: also-unknown-as-01
+    image: "also-unknown-as-image"
+    hostname: team01-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.11
+    restart: always
+
+  also-unknown-as-02:
+    container_name: also-unknown-as-02
+    image: "also-unknown-as-image"
+    hostname: team02-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.12
+    restart: always
+
+  also-unknown-as-03:
+    container_name: also-unknown-as-03
+    image: "also-unknown-as-image"
+    hostname: team03-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.13
+    restart: always
+
+  also-unknown-as-04:
+    container_name: also-unknown-as-04
+    image: "also-unknown-as-image"
+    hostname: team04-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.14
+    restart: always
+
+  also-unknown-as-05:
+    container_name: also-unknown-as-05
+    image: "also-unknown-as-image"
+    hostname: team05-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.15
+    restart: always
+
+  also-unknown-as-06:
+    container_name: also-unknown-as-06
+    image: "also-unknown-as-image"
+    hostname: team06-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.16
+    restart: always
+
+  also-unknown-as-07:
+    container_name: also-unknown-as-07
+    image: "also-unknown-as-image"
+    hostname: team07-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.17
+    restart: always
+
+  also-unknown-as-08:
+    container_name: also-unknown-as-08
+    image: "also-unknown-as-image"
+    hostname: team08-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.18
+    restart: always
+
+  also-unknown-as-09:
+    container_name: also-unknown-as-09
+    image: "also-unknown-as-image"
+    hostname: team09-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.19
+    restart: always
+
+  also-unknown-as-10:
+    container_name: also-unknown-as-10
+    image: "also-unknown-as-image"
+    hostname: team10-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.20
+    restart: always
+
+  also-unknown-as-11:
+    container_name: also-unknown-as-11
+    image: "also-unknown-as-image"
+    hostname: team11-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.21
+    restart: always
+
+  also-unknown-as-12:
+    container_name: also-unknown-as-12
+    image: "also-unknown-as-image"
+    hostname: team12-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.22
+    restart: always
+
+  also-unknown-as-13:
+    container_name: also-unknown-as-13
+    image: "also-unknown-as-image"
+    hostname: team13-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.23
+    restart: always
+
+  also-unknown-as-14:
+    container_name: also-unknown-as-14
+    image: "also-unknown-as-image"
+    hostname: team14-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.24
+    restart: always
+
+  also-unknown-as-15:
+    container_name: also-unknown-as-15
+    image: "also-unknown-as-image"
+    hostname: team15-also-unknown-as.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.25
+    restart: always
+
+
+
+  hardnginx-01:
+    container_name: hardnginx-01
+    image: "hardnginx-image"
+    hostname: team01-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.31
+    restart: always
+
+  hardnginx-02:
+    container_name: hardnginx-02
+    image: "hardnginx-image"
+    hostname: team02-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.32
+    restart: always
+
+  hardnginx-03:
+    container_name: hardnginx-03
+    image: "hardnginx-image"
+    hostname: team03-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.33
+    restart: always
+
+  hardnginx-04:
+    container_name: hardnginx-04
+    image: "hardnginx-image"
+    hostname: team04-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.34
+    restart: always
+
+  hardnginx-05:
+    container_name: hardnginx-05
+    image: "hardnginx-image"
+    hostname: team05-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.35
+    restart: always
+
+  hardnginx-06:
+    container_name: hardnginx-06
+    image: "hardnginx-image"
+    hostname: team06-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.36
+    restart: always
+
+  hardnginx-07:
+    container_name: hardnginx-07
+    image: "hardnginx-image"
+    hostname: team07-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.37
+    restart: always
+
+  hardnginx-08:
+    container_name: hardnginx-08
+    image: "hardnginx-image"
+    hostname: team08-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.38
+    restart: always
+
+  hardnginx-09:
+    container_name: hardnginx-09
+    image: "hardnginx-image"
+    hostname: team09-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.39
+    restart: always
+
+  hardnginx-10:
+    container_name: hardnginx-10
+    image: "hardnginx-image"
+    hostname: team10-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.40
+    restart: always
+
+  hardnginx-11:
+    container_name: hardnginx-11
+    image: "hardnginx-image"
+    hostname: team11-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.41
+    restart: always
+
+  hardnginx-12:
+    container_name: hardnginx-12
+    image: "hardnginx-image"
+    hostname: team12-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.42
+    restart: always
+
+  hardnginx-13:
+    container_name: hardnginx-13
+    image: "hardnginx-image"
+    hostname: team13-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.43
+    restart: always
+
+  hardnginx-14:
+    container_name: hardnginx-14
+    image: "hardnginx-image"
+    hostname: team14-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.44
+    restart: always
+
+  hardnginx-15:
+    container_name: hardnginx-15
+    image: "hardnginx-image"
+    hostname: team15-hardnginx.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.45
+    restart: always
+
+
+
+  shell4log-server:
+    container_name: shell4log-server
+    image: "shell4log-server-image"
+    hostname: shell4log-server.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.50
+    ports:
+      - "8080:8080"
+    restart: always
+
+  shell4log-attacker-01:
+    container_name: shell4log-attacker-01
+    image: "shell4log-attacker-image"
+    hostname: team01-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.51
+    restart: always
+
+  shell4log-attacker-02:
+    container_name: shell4log-attacker-02
+    image: "shell4log-attacker-image"
+    hostname: team02-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.52
+    restart: always
+
+  shell4log-attacker-03:
+    container_name: shell4log-attacker-03
+    image: "shell4log-attacker-image"
+    hostname: team03-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.53
+    restart: always
+
+  shell4log-attacker-04:
+    container_name: shell4log-attacker-04
+    image: "shell4log-attacker-image"
+    hostname: team04-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.54
+    restart: always
+
+  shell4log-attacker-05:
+    container_name: shell4log-attacker-05
+    image: "shell4log-attacker-image"
+    hostname: team05-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.55
+    restart: always
+
+  shell4log-attacker-06:
+    container_name: shell4log-attacker-06
+    image: "shell4log-attacker-image"
+    hostname: team06-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.56
+    restart: always
+
+  shell4log-attacker-07:
+    container_name: shell4log-attacker-07
+    image: "shell4log-attacker-image"
+    hostname: team07-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.57
+    restart: always
+
+  shell4log-attacker-08:
+    container_name: shell4log-attacker-08
+    image: "shell4log-attacker-image"
+    hostname: team08-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.58
+    restart: always
+
+  shell4log-attacker-09:
+    container_name: shell4log-attacker-09
+    image: "shell4log-attacker-image"
+    hostname: team09-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.59
+    restart: always
+
+  shell4log-attacker-10:
+    container_name: shell4log-attacker-10
+    image: "shell4log-attacker-image"
+    hostname: team10-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.60
+    restart: always
+
+  shell4log-attacker-11:
+    container_name: shell4log-attacker-11
+    image: "shell4log-attacker-image"
+    hostname: team11-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.61
+    restart: always
+
+  shell4log-attacker-12:
+    container_name: shell4log-attacker-12
+    image: "shell4log-attacker-image"
+    hostname: team12-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.62
+    restart: always
+
+  shell4log-attacker-13:
+    container_name: shell4log-attacker-13
+    image: "shell4log-attacker-image"
+    hostname: team13-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.63
+    restart: always
+
+  shell4log-attacker-14:
+    container_name: shell4log-attacker-14
+    image: "shell4log-attacker-image"
+    hostname: team14-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.64
+    restart: always
+
+  shell4log-attacker-15:
+    container_name: shell4log-attacker-15
+    image: "shell4log-attacker-image"
+    hostname: team15-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.65
+    restart: always
+
+
+
+  de-deface-it-01:
+    container_name: de-deface-it-01
+    image: "de-deface-it-image"
+    hostname: team01-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.71
+    restart: always
+
+  de-deface-it-02:
+    container_name: de-deface-it-02
+    image: "de-deface-it-image"
+    hostname: team02-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.72
+    restart: always
+
+  de-deface-it-03:
+    container_name: de-deface-it-03
+    image: "de-deface-it-image"
+    hostname: team03-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.73
+    restart: always
+
+  de-deface-it-04:
+    container_name: de-deface-it-04
+    image: "de-deface-it-image"
+    hostname: team04-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.74
+    restart: always
+
+  de-deface-it-05:
+    container_name: de-deface-it-05
+    image: "de-deface-it-image"
+    hostname: team05-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.75
+    restart: always
+
+  de-deface-it-06:
+    container_name: de-deface-it-06
+    image: "de-deface-it-image"
+    hostname: team06-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.76
+    restart: always
+
+  de-deface-it-07:
+    container_name: de-deface-it-07
+    image: "de-deface-it-image"
+    hostname: team07-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.77
+    restart: always
+
+  de-deface-it-08:
+    container_name: de-deface-it-08
+    image: "de-deface-it-image"
+    hostname: team08-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.78
+    restart: always
+
+  de-deface-it-09:
+    container_name: de-deface-it-09
+    image: "de-deface-it-image"
+    hostname: team09-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.79
+    restart: always
+
+  de-deface-it-10:
+    container_name: de-deface-it-10
+    image: "de-deface-it-image"
+    hostname: team10-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.80
+    restart: always
+
+  de-deface-it-11:
+    container_name: de-deface-it-11
+    image: "de-deface-it-image"
+    hostname: team11-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.81
+    restart: always
+
+  de-deface-it-12:
+    container_name: de-deface-it-12
+    image: "de-deface-it-image"
+    hostname: team12-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.82
+    restart: always
+
+  de-deface-it-13:
+    container_name: de-deface-it-13
+    image: "de-deface-it-image"
+    hostname: team13-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.83
+    restart: always
+
+  de-deface-it-14:
+    container_name: de-deface-it-14
+    image: "de-deface-it-image"
+    hostname: team14-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.84
+    restart: always
+
+  de-deface-it-15:
+    container_name: de-deface-it-15
+    image: "de-deface-it-image"
+    hostname: team15-de-deface-it.local
+    networks:
+      ctf-network:
+        ipv4_address: 172.25.1.85
+    restart: always
+
+
+

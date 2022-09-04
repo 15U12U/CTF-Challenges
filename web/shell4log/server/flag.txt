@@ -1,0 +1,1 @@
+flag{log4shell_1$_@_N!gH+mAr3}

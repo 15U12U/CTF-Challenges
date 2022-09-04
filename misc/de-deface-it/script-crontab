@@ -1,0 +1,1 @@
+* * * * * root /bin/bash /home/ctf-user/script.sh >> /var/log/cron.log 2>&1

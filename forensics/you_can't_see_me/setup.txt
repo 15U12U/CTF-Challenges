@@ -1,0 +1,8 @@
+Create a password protected zip file
+# zip -e TOP_SECRET.zip TOP_SECRET.pdf
+
+Write Hints inside the zip file
+# zipnote -w TOP\ SECRET.zip < comments.txt
+
+Hide the zip file inside the image
+# steghide embed -ef TOP_SECRET.zip -cf image.jpg

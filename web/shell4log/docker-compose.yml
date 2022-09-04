@@ -1,0 +1,26 @@
+version: "3.8"
+
+networks:
+  ctf_ctf-network:
+    external: true
+
+services:
+  shell4log-server:
+    container_name: shell4log-server
+    image: "shell4log-server-image"
+    hostname: shell4log-server.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.110
+    ports:
+      - "8080:8080"
+    restart: always
+
+  shell4log-attacker-01:
+    container_name: shell4log-attacker-01
+    image: "shell4log-attacker-image"
+    hostname: team01-shell4log-attacker.local
+    networks:
+      ctf_ctf-network:
+        ipv4_address: 172.25.1.112
+    restart: always
